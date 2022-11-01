@@ -20,4 +20,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    static public string GetPlayerName()
+    {
+        if (instance != null)
+        {
+            return instance.playerName;
+        }
+
+        return "";
+    }
 }
